@@ -1,0 +1,116 @@
+body {
+    margin: auto;
+    background-color: #07000Ee0;
+}
+#img_fundo{
+
+}
+
+.topnav {
+    background-color: #07000E;
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+}
+a#login{
+    float: right
+}
+a#cadastro{
+    float: right
+}
+
+.topnav a {
+float: left;
+color: #F9F9F9;
+text-align: center;
+padding: 18px 20px;
+text-decoration: none;
+font-size: 18px;
+}
+.topnav a:hover {
+    background-color: #F9F9F9;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #ffd32a;
+    color: #F9F9F9;
+    text-shadow: 1px 1px black;
+}
+/* BANNER */
+#banner {
+    margin: auto;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    color: #F9F9F9;
+
+}
+#banner_centro{
+    margin: auto;
+}
+/* PATERNEZIS */
+#taxi{
+    margin: auto;
+    width: 60%;
+    font-size: 8vh;
+    color: #ffd32a;
+    border-bottom: 1vh solid #ffd32a;
+    text-shadow: 5px 5px black;
+}
+/* Div conteudo */
+#conteudo div{
+    background-color: #07000E;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+ 
+/* TEXTOS */
+
+#esquerda{
+    float: left;
+    font-size: 20px;
+    height: 30%;
+    width: 30%;
+    margin: auto;
+}
+#direita{
+    float: left;
+    font-size: 20px;
+    height: 30%;
+    width: 30%;
+    margin: auto;
+}
+
+
+
+/* NOVIDADES */
+
+.novidades {
+    background-color: #07000E;
+    height: 90px;
+}
+
+.novidades .container {
+    padding: 30px 0;
+}
+
+
+.novidades button {
+    color: white;
+    text-shadow: 1px 1px black;
+    background-color: #ffd32a;
+    text-transform: uppercase;
+    width: 180px;
+    margin: auto;
+    display: block; /* Default de botão é inline-block. Com block, margin auto funciona*/
+    border: 0;
+    height: 38px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.novidades a{
+    text-decoration: none;
+}

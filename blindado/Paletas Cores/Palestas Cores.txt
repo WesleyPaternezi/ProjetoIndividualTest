@@ -1,0 +1,26 @@
+CORES USADAS PROJETO INDIVIDUAL:
+Paletta Taxi Primeira 
+AMARELO DOURADINHO: #ffd32a
+Branco acinzentado: #d2dae2
+TEXTOS em Branco: #F9F9F9
+
+Paletta Cidade Melbourne:
+roxo: #522E75
+preto: # 02080F
+bege escuro: #52591F
+marrom claro: #A3765D
+marrom: #714E3D
+
+Paletta Mesa de Café:
+Preto Sombra: #040C0E
+Preto Clareado: #132226
+Marrom Acinzentado: #525B56
+Café caramelo: #BE9063
+Cinza Gesso: #A4978E
+
+Paletta Twilight Moon Alaranjado
+Preto: #07000E
+Areia: #EECC8D
+Laranja: #F08B33
+Abobora: #D75404
+Marrom Alaranjado: #8A2C02
