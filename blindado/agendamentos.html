@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <script src="js/index.js"> </script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- !!! TOPO NAVBAR !!! -->
+    <div class="topnav">
+        <a href="index.html">Inicio</a>
+        <a href="sobre.html">Sobre</a>
+        <a class="active" href="agendamentos.html">Agendamento</a>
+        <a href="">Equipe</a>
+        <a href="">Contato</a>
+        <a href="">Projetos</a>
+        <a id="cadastro" href="">Cadastro</a>
+        <a id="login" href="">Login</a>
+    </div>
+    <!-- !!! BANNER !!! -->
+    <div id="banner">
+        <div id="banner_centro">
+            <div id="conteudo">
+                <h1 id="taxi">PATERNEZI'S</h1>
+                <h1>Agenda Sua Viagem Conosco!</h1>
+                <select id="sel_partida">
+                    <option value="0" selected disabled>Partida</option>
+                    <option value="1">Centro de São Paulo</option>
+                    <option value="2">Centro de São Caetano do Sul</option>
+                    <option value="3">Centro de Santo André</option>
+                    <option value="4">Centro de Sâo Bernardo do Campo</option>
+                </select>
+                <br>
+                <select id="sel_destino">
+                    <option value="0" selected disabled>Destino</option>
+                    <option value="1">Centro de São Paulo</option>
+                    <option value="2">Centro de São Caetano do Sul</option>
+                    <option value="3">Centro de Santo André</option>
+                    <option value="4">Centro de Sâo Bernardo do Campo</option>
+                </select>
+                <br>
+                <button onclick="calcular()">Calcular Preço</button>
+                <div id="div_valor"></div>
+            </div>
+        </div>
+    </div>
+    <div class="novidades">
+        <div class="container">
+            <a href="">
+                <button type="submit">CADASTRAR-ME</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        div_valor.innerHTML = ``
+        var partida = sel_partida.value
+        var destino = sel_destino.value
+
+        if (partida == 1 && destino == 1) {// 1(Centro de Sâo Paulo) até 1(Centro de Sâo Paulo)
+            div_valor.innerHTML = `Sua corrida sairá Aproximadamente R$10 à R$20 <br>
+            Percorrerá em torno de 5 à 10 minutos
+            Aproximadamente 1km's à 3km's`
+        } else if (partida == 1 && destino == 2) {// 1(Centro de Sâo Paulo) até 2(Centro de São Caetano do Sul)
+            div_valor.innerHTML = `Sua corrida sairá Aproximadamente R$40 à R$60 <br>
+            Percorrerá em torno de 20 à 40 minutos
+            Aproximadamente 15km's à 20km's`
+        } else if (partida == 1 && destino == 3) {// 1(Centro de Sâo Paulo) até 3(Centro De Santo André)
+            div_valor.innerHTML = `Sua corrida sairá Aproximadamente R$45 à R$90 <br>
+            Percorrerá em torno de 30 à 40 minutos
+            Aproximadamente 20km's à 40km's`
+        } else if (partida == 1 && destino == 4) {// 1(Centro de Sâo Paulo) até 4(Centro De São Bernardo)
+            div_valor.innerHTML = `Sua corrida sairá Aproximadamente R$50 à R$95 <br>
+            Percorrerá em torno de 40 à 50 minutos
+            Aproximadamente 25km's à 45km's`
+        }
+    }
+</script>

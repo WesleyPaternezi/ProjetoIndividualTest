@@ -2,10 +2,6 @@ body {
     margin: auto;
     background-color: #07000Ee0;
 }
-#img_fundo{
-
-}
-
 .topnav {
     background-color: #07000E;
     overflow: hidden;
@@ -18,7 +14,6 @@ a#login{
 a#cadastro{
     float: right
 }
-
 .topnav a {
 float: left;
 color: #F9F9F9;
@@ -31,7 +26,6 @@ font-size: 18px;
     background-color: #F9F9F9;
     color: black;
 }
-
 .topnav a.active {
     background-color: #ffd32a;
     color: #F9F9F9;
@@ -44,12 +38,10 @@ font-size: 18px;
     height: 50vh;
     text-align: center;
     color: #F9F9F9;
-
 }
 #banner_centro{
     margin: auto;
 }
-
 #taxi{
     margin: auto;
     width: 60%;
