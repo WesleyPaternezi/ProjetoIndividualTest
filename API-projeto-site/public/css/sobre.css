@@ -1,0 +1,219 @@
+body {
+    margin: auto;
+    background-color: #07000E;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.topnav {
+    background-color: #07000E;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1vh solid #ffd32a;
+    margin: 0;
+}
+.topnav a {
+float: left;
+color: #F9F9F9;
+text-align: center;
+padding: 18px 20px;
+text-decoration: none;
+font-size: 18px;
+margin: 0;
+}
+.topnav a:hover {
+    background-color: #F9F9F9;
+    color: black;
+}
+.topnav a.active {
+    background-color: #ffd32a;
+    color: #F9F9F9;
+    text-shadow: 1px 1px black;
+}
+a#login{
+    float: right
+}
+a#cadastro{
+    float: right
+}
+/* header FIM */
+/* BANNER INICIO */
+.banner {
+    height: 400px;
+    width: 100%;
+    background: url(../img/fundo9.png);
+    background-size: cover;
+    left: 0;
+    bottom: 0;
+    position: relative;
+}
+/* Tamanho do banner com a foto do TAXI */
+.banner .container {
+    height: 400px;
+}
+/* Centralizando Taxis Blindado */
+.banner .texto {
+    text-align: center;
+    padding-top: 150px;
+}
+/* Colorindo Taxis blindado */
+.banner .titulo {
+    font-size: 68px;
+    color: #ffd32a;
+
+}
+/* BANNER FIM  */
+
+/* NOVIDADES */
+.novidades {
+    background-color: #07000E;
+    height: 90px;  
+    border-top: 3px solid #ffd32a;   
+    border-bottom: 3px solid #ffd32a;   
+}
+.novidades .container {
+    padding: 30px 0;
+}
+.novidades button {
+    color: white;
+    background-color: #ffd32a;
+    text-transform: uppercase;
+    width: 180px;
+    margin: auto;
+    display: block; /* Default de botão é inline-block. Com block, margin auto funciona*/
+    border: 0;
+    height: 38px;
+    padding: 0 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px black;
+}
+/* ICONES */
+.box {
+    overflow: auto;
+    background-color: #07000E;
+}
+
+.box .box-item {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.box .box-item img {
+    height: 100px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #ffd32a;
+    text-align: center;
+    height: 100px;
+    text-shadow: 1px 1px black;
+}
+
+.footer h4 {
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 40px;
+}
+
+/* SOBRE - ASSUNTOS */
+
+.assuntos {
+    background-color: #07000E;
+    overflow: auto;
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 50px; /*aqui oh a diferença entre padding e margin*/
+    color: #F9F9F9
+}
+
+.assuntos .assunto1 {
+    border-bottom: 3px solid #ffd32a;
+    background-color: #07000E;
+    padding: 30px 15px;
+    float: left;
+    width: 40%;
+    margin-left: 5%; 
+}
+
+.assuntos .assunto2 {
+    border-bottom: 3px solid #ffd32a;
+    background-color: #07000E;
+    padding: 30px 15px;
+    float: left;
+    width: 40%;
+    margin-left: 5%; 
+}
+.assuntos .assunto3 {
+    border-bottom: 3px solid #ffd32a;
+    background-color: #07000E;
+    padding: 30px 15px;
+    float: left;
+    width: 40%;
+    margin-left: 5%; 
+}
+.assuntos h2 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.assuntos p {
+    line-height: 1.5;
+}
+
+/* SOBRE - INTEGRANTES */
+
+.nosso-time {
+    background-color: #07000E;
+    text-align: center;
+    overflow: auto;
+} 
+
+.nosso-time h2 {
+    margin: 0;
+    padding-top: 25px;
+    color: #F9F9F9;
+    text-transform: uppercase;
+}
+
+.nosso-time .integrantes {
+    color: #F9F9F9;
+    overflow: auto;
+    margin-top: 30px;
+    padding-bottom: 35px;
+}
+
+
+.nosso-time .integrantes .integrante {
+    /*border: 3px solid cyan;*/
+    width: 18%;
+    float: left;
+    padding: 1%;
+    line-height: 1.5;
+}
+
+.nosso-time .integrante img {
+    height: 100px;
+    background-color: #ff8968;
+    border-radius: 50%;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ASSUNTO GRANDE */
+
+.assuntos .assunto-grande {
+    border-bottom: 3px solid #ffd32a;
+    background-color: #07000E;
+    padding: 50px 30px;
+    float: left;
+    margin-left: 55px; 
+    color: #F9F9F9;
+}

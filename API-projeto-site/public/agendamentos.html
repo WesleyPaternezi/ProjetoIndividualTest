@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <script src="js/index.js"> </script>
+    <link rel="stylesheet" href="css/agendamentos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <script src="js/agendamento.js"></script>
+</head>
+
+<body>
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+    <source src="img/videoTaxi.mp4" type="video/mp4">
+    </video>
+    </div>
+
+    <!-- !!! TOPO NAVBAR !!! -->
+    <div class="topnav">
+        <a href="index.html">Inicio</a>
+        <a href="sobre.html">Sobre</a>
+        <a class="active" href="agendamentos.html">Agendamento</a>
+        <a href="">Equipe</a>
+        <a href="">Contato</a>
+        <a href="">Projetos</a>
+        <a id="cadastro" href="">Cadastro</a>
+        <a id="login" href="">Login</a>
+    </div>
+
+    <!-- !!! BANNER !!! -->
+    <div id="banner">
+        <div id="banner_centro">
+            <div id="conteudo">
+                <h1 id="taxi">PATERNEZI</h1>
+                <div id="div_agenda">
+                    <h1>Agenda Sua Viagem Conosco!</h1>
+                    <h1>Tipo de Serviço:</h1>
+                    <select id="sel_inicio" onchange="change_inicio()">
+                        <option value="0" selected disabled>Destino</option>
+                        <option value="1">Particular</option>
+                        <option value="2">Hospitais</option>
+                        <option value="3">Aeroporto</option>
+                    </select>
+                    <br>
+                    <div id="div_municipio" style="display: none;">
+                        <h1>Selecione seu Municipio</h1>
+                        <select id="sel_municipio" onchange="change_municipio()">
+                            <option value="0" selected disabled>Partida</option>
+                            <option value="1">Grande São Paulo</option>
+                            <option value="2">ABC</option>
+                        </select>
+                    </div>
+                    <div id="div_destino" style="display: none;">
+                        <h1>Selecione Municipio de Destino</h1>
+                        <select id="sel_destino" onchange="change_destino()">
+                            <option value="0" selected disabled>Destino</option>
+                            <option value="1">Grande São Paulo</option>
+                            <option value="2">São Caetano do Sul</option>
+                            <option value="3">Santo André</option>
+                            <option value="4">São Bernardo do Campo</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div id="div_valor"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer inicio-->
+    <div class="footer">
+        <div class="container">
+            <h4>Feito com carinho por um aluno BandTec &COPY; 2021</h4>
+        </div>
+    </div>
+    <!--footer fim-->
+</body>
+
+</html>
