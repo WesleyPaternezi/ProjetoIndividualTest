@@ -1,0 +1,113 @@
+body {
+    margin: auto;
+    background-color: #07000E;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 0;
+}
+.topnav {
+    background-color: #07000E;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1vh solid #ffd32a;
+    margin: 0;
+}
+.topnav a {
+float: left;
+color: #F9F9F9;
+text-align: center;
+padding: 18px 20px;
+text-decoration: none;
+font-size: 18px;
+margin: 0;
+}
+.topnav a:hover {
+    background-color: #F9F9F9;
+    color: black;
+}
+.topnav a.active {
+    background-color: #ffd32a;
+    color: #F9F9F9;
+    text-shadow: 1px 1px black;
+}
+a#login{
+    float: right
+}
+a#cadastro{
+    float: right
+}
+/* header FIM */
+/* PÁGINA DO CONTATO */
+.contato {
+    background-color: #07000E;
+    align-items: center;
+    display: flex;
+    height: 50%;
+}
+
+.contato .container {
+    overflow: auto;
+    margin: auto;
+    height: 60%;
+}
+
+.contato h1 {
+    padding: 60px 0;
+}
+
+.formulario {
+    float: left;
+    width: 500px;
+}
+
+form label, form p{
+    display: block;
+    font-size: 20px;
+    margin-bottom:10px ;
+}
+
+.btn-green {
+    color: white;
+    background-color: green;
+    margin: 20px 0 50px 0;
+    border: 0;
+    padding: 10px 20px;
+
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.imagem-lateral {
+    overflow: auto;
+    padding: 0;
+}
+
+.contato img {
+    float: right;
+    width: 85%;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 90%;
+    border-radius: 5px;
+    border: solid 1px #bbbbbb;
+}
+/* FOOTER */
+.footer {
+    background-color: #ffd32a;
+    text-align: center;
+    height: 100px;
+    text-shadow: 1px 1px black;
+    margin-top: 4vh;
+}
+
+.footer h4 {
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 45px;
+}

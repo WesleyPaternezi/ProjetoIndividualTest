@@ -4,24 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto IoT - Sobre</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contato-e-login.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
     <!--header inicio-->
     <div class="header">
-        <div class="container">
-            <h1 class="titulo"><span class="highlight">Projeto</span> IoT Revolucionário</h1>
-            <div class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="" class="current">Login</a></li>
-                </ul>
-            </div>
+        <div class="topnav">
+            <a href="index.html">Inicio</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="agendamentos.html">Agendamento</a>
+            <a href="">Projetos</a>
+            <a id="cadastro" href="cadastro.html">Cadastro</a>
+            <a class="active" id="login" href="login.html">Login</a>
         </div>
     </div>
     <!--header fim-->
@@ -30,9 +26,6 @@
         <div class="container">
             <div class="box-login">
                 <h1>Login</h1>
-
-
-
                 <form id="form_login" method="post" onsubmit="return entrar()">
                     Usuário:
                     <input type="text" class="input-padrao" name="login">
@@ -41,15 +34,10 @@
                     <input type="password" class="input-padrao" name="senha">
                     <br>
                     <button id="btn_entrar" class="btn-green">Entrar</button>
+                    <br>
+                    <img id="img_taxi" src="img/taxiGif.gif" >
                 </form>
-
-                <div class="extra">
-                    <div id="div_erro" class="msg_erro">
-                    </div>
-
-                    <img src="aguarde-orange.gif" id="img_aguarde"  > <!--style="display: none;"-->
-                    
-                </div>
+                <br>
             </div>
         </div>
     </div>
@@ -68,7 +56,6 @@
 <script>
 
     function entrar() {
-        aguardar();
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
             method: "POST",
@@ -92,25 +79,11 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    finalizar_aguardar(texto);
                 });
             }
         });
 
         return false;
-    }
 
-    function aguardar() {
-        btn_entrar.disabled = true;
-        img_aguarde.style.visibility = 'visible';
-        div_erro.style.visibility = 'hidden';
     }
-
-    function finalizar_aguardar(resposta) {
-        btn_entrar.disabled = false;
-        img_aguarde.style.visibility = 'hidden';
-        div_erro.style.visibility = 'visible';
-        div_erro.innerHTML = resposta;
-    }
-
 </script>

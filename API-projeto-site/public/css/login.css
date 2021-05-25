@@ -1,0 +1,117 @@
+body {
+    margin: auto;
+    background-color: #07000E;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-image: ;
+}
+/* TOPNAVBAR INICIO */
+.topnav {
+    background-color: #07000E;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1vh solid #ffd32a;
+    margin: 0;
+}
+.topnav a {
+float: left;
+color: #F9F9F9;
+text-align: center;
+padding: 18px 20px;
+text-decoration: none;
+font-size: 18px;
+margin: 0;
+}
+.topnav a:hover {
+    background-color: #F9F9F9;
+    color: black;
+}
+.topnav a.active {
+    background-color: #ffd32a;
+    color: #F9F9F9;
+    text-shadow: 1px 1px black;
+}
+a#login{
+    float: right
+}
+a#cadastro{
+    float: right
+}
+/* topnavbar FIM */
+
+/* PÁGINA DO LOGIN */
+
+.pag-login {
+    background-color: #07000E;
+    text-align: center;
+}
+
+.pag-login h1 {
+    margin-bottom: 40px;
+}
+
+.pag-login .input-padrao {
+    width: 50%;
+    display: inline-block;
+}
+
+.box-login {
+    margin-top: 50px;
+    display: inline-block;
+    background-color: white;
+    box-shadow:  5px 5px 5px 5px #ccc;
+    padding: 60px 20px 350px 20px;
+    border-radius: 20px;
+    width: 800px;
+    color: #07000E;
+    height: 100px;
+}
+
+.pag-login .btn-green {
+    display: block;
+    float: none;
+    margin: auto;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 90%;
+    border-radius: 5px;
+    border: solid 1px #bbbbbb;
+}
+
+.btn-green {
+    color: white;
+    background-color: green;
+    margin: 20px 0 50px 0;
+    border: 0;
+    padding: 10px 20px;
+
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+}
+/*  GIF DO TAXI */
+#img_taxi{
+    height: 150px;
+}
+/*  FIM DO GIF DO TAXI */
+
+/* FOOTER */
+
+.footer {
+    background-color: #ffd32a;
+    text-align: center;
+    height: 100px;
+    text-shadow: 1px 1px black;
+    margin-top: 4vh;
+}
+
+.footer h4 {
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 45px;
+}
