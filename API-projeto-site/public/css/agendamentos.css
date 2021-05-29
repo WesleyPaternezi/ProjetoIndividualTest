@@ -4,6 +4,18 @@ body {
     color: white;
     font-family: 'Merriweather Sans', sans-serif;
 }
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CABEÇALHO  */
+
 .topnav {
     background-color: #07000E;
     overflow: hidden;
@@ -11,19 +23,35 @@ body {
     border-bottom: 1vh solid #ffd32a;
     width: 100%;
 }
-a#login{
-    float: right
-}
-a#cadastro{
-    float: right
-}
+
 .topnav a {
-float: left;
-color: #F9F9F9;
-text-align: center;
-padding: 18px 20px;
-text-decoration: none;
-font-size: 18px;
+    float: left;
+    color: #F9F9F9;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.usuario {
+    width: 75%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.usuario h3 {
+    font-weight: 100;
+}
+
+b{
+    color: #ffd32a;
+    float: right;
+}
+h3{
+    color: #ffd32a;
+    float: right;
 }
 .topnav a:hover {
     background-color: #F9F9F9;
@@ -33,6 +61,13 @@ font-size: 18px;
     background-color: #ffd32a;
     color: #F9F9F9;
     text-shadow: 1px 1px black;
+}
+
+a#login{
+    float: right
+}
+a#cadastro{
+    float: right
 }
 /* BANNER */
 

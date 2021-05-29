@@ -109,7 +109,6 @@ a#cadastro{
 /* NOVIDADES */
 .novidades {
     background-color: #07000E;
-    border-bottom: 3px solid #ffd32a;
     border-top: 3px solid #ffd32a;    
 }
 .novidades .container {
