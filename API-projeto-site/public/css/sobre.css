@@ -62,7 +62,6 @@ a#cadastro{
 
 }
 /* BANNER FIM  */
-
 /* NOVIDADES */
 .novidades {
     background-color: #07000E;
@@ -126,12 +125,12 @@ a#cadastro{
     overflow: auto;
     padding-top: 30px;
     text-align: center;
-    padding-bottom: 50px; /*aqui oh a diferença entre padding e margin*/
+    padding-bottom: 50px;
     color: #F9F9F9
 }
 
 .assuntos .assunto1 {
-    border-bottom: 3px solid #ffd32a;
+    /* border-bottom: 3px solid #ffd32a; */
     background-color: #07000E;
     padding: 30px 15px;
     float: left;
@@ -140,7 +139,7 @@ a#cadastro{
 }
 
 .assuntos .assunto2 {
-    border-bottom: 3px solid #ffd32a;
+    /* border-bottom: 3px solid #ffd32a; */
     background-color: #07000E;
     padding: 30px 15px;
     float: left;
@@ -148,13 +147,14 @@ a#cadastro{
     margin-left: 5%; 
 }
 .assuntos .assunto3 {
-    border-bottom: 3px solid #ffd32a;
+    /* border-bottom: 3px solid #ffd32a; */
     background-color: #07000E;
     padding: 30px 15px;
     float: left;
     width: 40%;
     margin-left: 5%; 
 }
+
 .assuntos h2 {
     margin: 0;
     padding: 0;
@@ -198,7 +198,7 @@ a#cadastro{
 
 .nosso-time .integrante img {
     height: 100px;
-    background-color: #ff8968;
+    background-color: #ffd32a;
     border-radius: 50%;
     padding: 10px;
 }
@@ -212,8 +212,7 @@ a{
 .assuntos .assunto-grande {
     border-bottom: 3px solid #ffd32a;
     background-color: #07000E;
-    padding: 50px 30px;
-    float: left;
-    margin-left: 55px; 
     color: #F9F9F9;
+    margin: auto;
+    width: 60%;
 }

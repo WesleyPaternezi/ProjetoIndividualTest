@@ -1,8 +1,13 @@
 body {
-    margin: auto;
+    margin: 0;
     background-color: #07000E;
     color: white;
     font-family: 'Merriweather Sans', sans-serif;
+    background: url(../img/fundo9.png);
+    background-repeat: no-repeat;
+    height: 57vh;
+    width: 100%;
+    background-size: cover;
 }
 .topnav {
     background-color: #07000E;
@@ -38,17 +43,12 @@ a#cadastro{
 /* header FIM */
 /* BANNER INICIO */
 .banner {
-    height: 400px;
-    width: 100%;
-    background: url(../img/fundo9.png);
-    background-size: cover;
-    left: 0;
-    bottom: 0;
-    position: relative;
+    border-bottom: 3px solid #ffd32a;
+    height: 57vh;
 }
 /* Tamanho do banner com a foto do TAXI */
 .banner .container {
-    height: 400px;
+
 }
 /* Centralizando Taxis Blindado */
 .banner .texto {
@@ -62,13 +62,55 @@ a#cadastro{
     text-shadow: 5px 5px #07000E;
 }
 /* BANNER FIM  */
+/* BANNER veiculo */
 
+.about-us-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.img_budget {
+    height: 70%;
+    padding-bottom: 70px;
+}
+
+.about-desc {
+    padding-top: 0px;
+    padding-left: 25px;
+    width: 60%;
+    background-color: #fff;
+}
+
+.about-desc p {
+    text-align: justify;
+    margin-top: 30px;
+    font-size: 18px;
+    width: 90%;
+    color: black;
+}
+.about-desc .title{
+    color: black;
+}
+
+#veiculos{
+    color: black;
+}
+/* FIM BANNER 2 */
 /* NOVIDADES */
 .novidades {
     background-color: #07000E;
-    height: 90px;  
-    border-top: 3px solid #ffd32a;   
-    border-bottom: 3px solid #ffd32a;   
+    border-bottom: 3px solid #ffd32a;
+    border-top: 3px solid #ffd32a;    
 }
 .novidades .container {
     padding: 30px 0;
@@ -111,7 +153,6 @@ a#cadastro{
     text-align: center;
     height: 100px;
     text-shadow: 1px 1px black;
-    margin-top: 4vh;
 }
 
 .footer h4 {

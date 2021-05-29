@@ -12,15 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,600&display=swap"
         rel="stylesheet">
     <script src="js/agendamento.js"></script>
+    <script type="text/javascript" src="funcoes.js"></script>
 </head>
 
 <body>
-    <div class="fullscreen-bg">
-        <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-    <source src="img/videoTaxi.mp4" type="video/mp4">
-    </video>
-    </div>
-
     <!-- !!! TOPO NAVBAR !!! -->
     <div class="topnav">
         <a href="index.html">Inicio</a>
@@ -29,6 +24,7 @@
         <a href="">Projetos</a>
         <a id="cadastro" href="cadastro_antigo.html">Cadastro</a>
         <a id="login" href="login.html">Login</a>
+        <h3>Bem Vindo &nbsp; <b id="b_usuario"></b></h3>
     </div>
 
     <!-- !!! BANNER !!! -->
@@ -36,6 +32,11 @@
         <div id="banner_centro">
             <div id="conteudo">
                 <h1 id="taxi">PATERNEZI</h1>
+                <div class="fullscreen-bg">
+                    <video muted autoplay loop poster="img/videoframe.jpg" class="fullscreen-bg__video">
+                        <source src="img/videoTaxi.mp4" type="video/mp4">
+                    </video>
+                </div>
                 <div id="div_agenda">
                     <h1>Agenda Sua Viagem Conosco!</h1>
                     <h1>Tipo de Serviço:</h1>
@@ -75,10 +76,14 @@
     <!--footer inicio-->
     <div class="footer">
         <div class="container">
-            <h4>Feito com carinho por um aluno BandTec &COPY; 2021</h4>
+            <h4>Feito por um aluno BandTec &COPY; 2021</h4>
         </div>
     </div>
     <!--footer fim-->
 </body>
 
 </html>
+<script>
+    let usuario;
+    verificar_autenticacao();
+</script>

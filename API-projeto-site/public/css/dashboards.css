@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     padding: 0;
     margin: 0;
-        background-color: #ecf0f1;
+    background-color: #ecf0f1;
 }
 
 
@@ -17,16 +17,22 @@ a {
 
 /* CABEÇALHO */
 
-.header {
-    background-color: #232323;
-    border-right: 3px solid orangered;
-    width: 20%;
-    height: 100%;
-    position: fixed;
+.topnav {
+    background-color: #07000E;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1vh solid #ffd32a;
+    margin: 0;
 }
 
-.header .container .highlight {
-    color: orangered
+.topnav a {
+    float: left;
+    color: #F9F9F9;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
 }
 
 .usuario {
@@ -39,46 +45,38 @@ a {
 
 .usuario h3 {
     font-weight: 100;
-}
-
-.header h1 {
     margin: 0;
-    padding: 0;
-    float: left;
-    margin: 35px;
-    color: white;
-    font-size: 25px;
-    padding-bottom: 50px;
-    border-bottom: 2px solid orangered;
+}
+b{
+    color: #ffd32a;
+    float: right;
+}
+h3{
+    color: #ffd32a;
+    float: right;
 }
 
-.header ul {
-    list-style-type: none;
-    float: left;
-    margin-top: 40px;
+.topnav a:hover {
+    background-color: #F9F9F9;
+    color: black;
 }
 
-.header li {
-    margin: 0 0 30px 0;
+.topnav a.active {
+    background-color: #ffd32a;
+    color: #F9F9F9;
+    text-shadow: 1px 1px black;
 }
 
-.header a {
-    text-transform: uppercase;
-    color: white;
+a#login{
+    float: right
 }
-
-.header a:hover {
-    font-weight: bold;
-}
-
-.header .current {
-    color: orangered;
-    font-weight: bold;
+a#cadastro{
+    float: right
 }
 
 
 /* FOOTER */
-
+/* 
 .footer {
     background-color: rgb(255, 95, 37);
     text-align: center;
@@ -90,135 +88,8 @@ a {
     font-weight: 100;
     margin: 0;
     padding-top: 40px;
-}
+} */
 
 
 
 /* dashboard */
-
-.dashboard {
-    background-color: #ecf0f1;
-    text-align: center;
-    padding: 50px 0;
-    width: 80%;
-    height: 100%;
-    margin-left: auto;
-}
-
-.dashboard h1 {
-    margin-bottom: 40px;
-}
-
-.dashboard .input-padrao {
-    width: 50%;
-    display: inline-block;
-}
-
-.box-login {
-    display: inline-block;
-    background-color: white;
-    box-shadow:  3px 3px 5px 2px #ccc;
-    padding: 60px 20px 0px 20px;
-    border-radius: 20px;
-    width: 400px;
-}
-
-.dashboard .btn-green {
-    display: block;
-    float: none;
-    margin: auto;
-}
-
-.botoes {
-    margin: auto;
-    margin-bottom: 40px;
-    display: block; /* Default de botão é inline-block. Com block, margin auto funciona*/
-}
-
-.btn {
-    color: white;
-    text-transform: uppercase;
-    width: 180px;
-    margin: 0 1%;
-    border: 5px solid #ecf0f1;
-    height: 38px;
-    padding: 0 20px;
-    cursor: pointer;
-    background-color: rgb(255, 164, 131);
-}
-
-.btn-now {
-    border: 3px solid #232323;
-    background-color: orangered;
-}
-
-/* EXTRA */
-
-.extra {
-    margin: 10px;
-}
-
-.extra img {
-  height: 50px;
-   visibility: hidden;
-}
-
-.extra .msg_erro {
-    background-color: sandybrown; 
-    color: black; 
-    visibility: hidden;
-}
-
-.caminhao {
-    border: 1px solid red;
-    border-radius: 10px;
-    display: block;
-    width: 35%;
-    margin: 10px 7%;
-    height: 160px;
-    float: left;
-    text-align: center;
-
-    background-color: white;
-    box-shadow:  3px 3px 5px 2px #ccc;
-    
-}
-
-.caminhao .valores {
-    margin:auto;
-    overflow: auto;
-}
-
-.caminhao .valores .valor {
-    margin-left: 13%;
-    width: 30%;
-    float: left;
-}
-
-.caminhao .alertas {
-    width:100%;
-    margin:auto;
-    margin-top: 5px;
-    overflow: auto;
-}
-
-.caminhao .alertas .alerta {
-    margin-left: 13%;
-    width: 30%;
-    float: left;
-}
-.caminhao .alertas .alerta_umidd {
-    margin-right: 13%;
-    width: 30%;
-    float: right;
-}
-
-/* extra */
-
-.show-on-hover {
-    color:#232323
-}
-
-.show-on-hover:hover {
-    color:white
-}

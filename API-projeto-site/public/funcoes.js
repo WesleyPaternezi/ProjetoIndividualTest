@@ -15,7 +15,6 @@ function verificar_autenticacao() {
         b_usuario.innerHTML = nome_usuario;
         validar_sessao();
     }
-    
 }
 
 function logoff() {
