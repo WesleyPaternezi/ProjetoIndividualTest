@@ -8,34 +8,107 @@
     <link rel="stylesheet" href="css/dashboards.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,600&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="funcoes.js"></script>
 </head>
 
 <body onload="atualizacaoPeriodica()">
     <!--header inicio-->
-        <div class="header">
-            <div class="topnav">
-                <a href="index.html">Inicio</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="agendamentos.html">Agendamento</a>
-                <!-- <a href="">Projetos</a> -->
-                <a href="publicacoes.html">FeedBack</a>
-                <a class="active" href="tempo-real.html">Contatos</a>
-                <a id="login" href="" onclick="return logout()">LOGOUT</a>
-                <h3>&nbsp; Olá, &nbsp; <b id="b_usuario"></b></h3>
+    <div class="header">
+        <div class="topnav">
+            <a href="index.html">Inicio</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="agendamentos.html">Agendamento</a>
+            <a href="publicacoes.html">FeedBack</a>
+            <a class="active" href="tempo-real.html">Contatos</a>
+            <a id="login" href="" onclick="return logoff()">LOGOUT</a>
+            <h3>&nbsp; Olá, &nbsp; <b id="b_usuario"></b></h3>
+        </div>
+    </div>
+    <!--header fim-->
+    <!-- contatos -->
+    <div id="banner">
+        <div id="conteudo">
+            <div class="box-motorista-esquerda">
+                <img src="img/Team/R.jfif">
+                <h4>Rogerio Paternezi</h4>
+                <p>Numero Contato: <a href="https://wa.me/5511999379613">1199937-9613</a></p>
+                <p>Status atual:<span id="active_rog"></span>
+            </div>
+            <div class="box-motorista-direita">
+                <img src="img/Team/Sa.jfif">
+                <h4>Sandra Paternezi</h4>
+                <p>Numero Contato: <a href="https://wa.me/5511984660692">1198466-0692</a>
+                </p>
+                <p>Status atual:<span id="active_san"></span>
+            </div>
+            <div class="box-motorista-esquerda">
+                <img src="img/Team/s.jfif">
+                <h4>Silton Paternezi</h4>
+                <p>Numero Contato: <a href="https://wa.me/5511984660692">1198466-0692</a>
+                </p>
+                <p>Status atual:<span id="active_sil"></span>
+                </p>
+            </div>
+            <div class="box-motorista-direita">
+                <img src="img/Team/w1.jfif">
+                <h4>Willian Paternezi</h4>
+                <p>Numero Contato: <a href="https://wa.me/5511984660692">1198466-0692</a>
+                </p>
+                <p>Status atual:<span id="active_will"></span>
+                </p>
             </div>
         </div>
-        <!--header fim-->
+    </div>
+    <!-- contatos FIM -->
+    <!--footer inicio-->
+    <div class="footer">
+        <div class="container">
+            <h4>Feito por um aluno BandTec &COPY; 2021</h4>
+        </div>
+    </div>
+    <!--footer fim-->
 </body>
-
-
 <script>
-
     let usuario;
-
     verificar_autenticacao();
-    logout();
+
+    var online1 = parseInt(Math.random() * 2)
+    var online2 = parseInt(Math.random() * 2)
+    var online3 = parseInt(Math.random() * 2)
+    var online4 = parseInt(Math.random() * 2)
+
+    if (online1 == 1) {
+        active_rog.innerHTML = `<span id="active-will" style="color: green;">Online
+        </span>`
+    } else {
+        active_rog.innerHTML = `<span id="active-will" style="color: red;">Off-line
+        </span>`
+    }
+
+    if (online2 == 1) {
+        active_san.innerHTML = `<span id="active-will" style="color: green;">Online
+        </span>`
+    } else {
+        active_san.innerHTML = `<span id="active-will" style="color: red;">Off-line
+        </span>`
+    }
+
+    if (online3 == 1) {
+        active_sil.innerHTML = `<span id="active-will" style="color: green;">Online
+        </span>`
+    } else {
+        active_sil.innerHTML = `<span id="active-will" style="color: red;">Off-line
+        </span>`
+    }
+
+    if (online4 == 1) {
+        active_will.innerHTML = `<span id="active-will" style="color: green;">Online
+        </span>`
+    } else {
+        active_will.innerHTML = `<span id="active-will" style="color: red;">Off-line
+        </span>`
+    }
 
 </script>

@@ -106,6 +106,8 @@ a#cadastro{
     height: 100px;
     text-shadow: 1px 1px black;
     margin-top: 4vh;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer h4 {

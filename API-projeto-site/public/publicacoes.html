@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórum do meu Site</title>
+    <title>Feedback</title>
     <link rel="stylesheet" href="css/publicacoes.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,600&display=swap"
@@ -23,7 +23,7 @@
             <a href="agendamentos.html">Agendamento</a>
             <a class="active" href="publicacoes.html">FeedBack</a>
             <a href="tempo-real.html">Contatos</a>
-            <a id="login" href="" onclick="return logout()">LOGOUT</a>
+            <a id="login" href="" onclick="return logoff()">LOGOUT</a>
             <h3>&nbsp; Olá, &nbsp; <b id="b_usuario"></b></h3>
         </div>
     </div>
@@ -31,7 +31,7 @@
     <div class="dashboard">
         <div class="container">
             <div class="post">
-                <h2>Faça uma publicação!</h2>
+                <h2>Faça uma Avaliação!</h2>
                 <form id="form_publicar" method="post" onsubmit="return publicar()">
                     Descrição:
                     <br>
