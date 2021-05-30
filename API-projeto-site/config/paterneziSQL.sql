@@ -13,5 +13,6 @@ CREATE TABLE usuario (
 CREATE TABLE publicacao (
 	id INT PRIMARY KEY AUTO_INCREMENT,
     descricao VARCHAR(100),
-	fkUsuario INT
+	fkUsuario INT,
+    foreign key (fkUsuario) references usuario (id)
 );

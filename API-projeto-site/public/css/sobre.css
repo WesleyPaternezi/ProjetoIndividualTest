@@ -102,21 +102,6 @@ a#cadastro{
     height: 100px;
 }
 
-/* FOOTER */
-
-.footer {
-    background-color: #ffd32a;
-    text-align: center;
-    height: 100px;
-    text-shadow: 1px 1px black;
-}
-
-.footer h4 {
-    color: white;
-    font-weight: 100;
-    margin: 0;
-    padding-top: 40px;
-}
 
 /* SOBRE - ASSUNTOS */
 
@@ -215,4 +200,20 @@ a{
     color: #F9F9F9;
     margin: auto;
     width: 60%;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #ffd32a;
+    text-align: center;
+    height: 100px;
+    text-shadow: 1px 1px black;
+}
+
+.footer h4 {
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 40px;
 }

@@ -78,42 +78,54 @@ a#cadastro{
 #banner{
     margin: auto;
     width: 60%;
-    text-align: center;
 }
 .box-motorista-esquerda{
     background-color: #07000E;
     color: #F9F9F9;
     height: 300px;
-    width: 400px;
+    width: 500px;
     border-radius: 10px;
     float: left;
     margin-top: 50px;
-    text-align: center;
     box-shadow: 10px 10px 10px  gray;
 }
 .box-motorista-direita{
     background-color: #07000E;
     color: #F9F9F9;
     height: 300px;
-    width: 400px;
+    width: 500px;
     border-radius: 10px;
     float: right;
     margin-top: 50px;
-    text-align: center;
     box-shadow: 10px 10px 10px  gray;
+
 }
 /* Nosso time */
-
-img {
-    margin-top: 25px;
+.perfil{
     height: 100px;
     background-color: #ffd32a;
     border-radius: 50%;
-    padding: 10px;
 }
 a{
     text-decoration: none;
     color: white;
+}
+.veiculos{
+    height: 100px;
+}
+.direita_perfil{
+    text-align: center;
+    margin-right: 5vh;
+    float: right;
+}
+.esquerda_perfil{
+    margin-left: 5vh;
+    float: left;
+}
+.embaixo_perfil{
+    display: grid;
+    margin-top: 18vh;
+    text-align: center;
 }
 
 /* FOOTER */

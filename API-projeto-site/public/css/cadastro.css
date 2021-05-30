@@ -96,13 +96,18 @@ form label, form p{
     border-radius: 5px;
     border: solid 1px #bbbbbb;
 }
+
 /* FOOTER */
+
 .footer {
     background-color: #ffd32a;
     text-align: center;
     height: 100px;
     text-shadow: 1px 1px black;
     margin-top: 4vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer h4 {
