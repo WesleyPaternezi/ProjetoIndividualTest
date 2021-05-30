@@ -22,7 +22,7 @@
             <a href="sobre.html">Sobre</a>
             <a href="agendamentos.html">Agendamento</a>
             <a class="active" href="publicacoes.html">FeedBack</a>
-            <a href="tempo-real.html">Contatos</a>
+            <a href="contatos.html">Contatos</a>
             <a id="login" href="" onclick="return logoff()">LOGOUT</a>
             <h3>&nbsp; Olá, &nbsp; <b id="b_usuario"></b></h3>
         </div>
@@ -35,9 +35,9 @@
                 <form id="form_publicar" method="post" onsubmit="return publicar()">
                     Descrição:
                     <br>
-                    <textarea id="" rows="3" cols="50" maxlength="100" class="textarea-padrao" name="descricao"></textarea>
+                    <textarea id="text_campo" rows="3" cols="50" maxlength="100" class="textarea-padrao" name="descricao"></textarea>
                     <br>
-                    <button id="btn_publicar" class="btn-green">Publicar</button>
+                    <button id="btn_publicar" onclick="limpar()" class="btn-green">Publicar</button>
                 </form>
                 <div class="extra">
                     <div id="div_erro" class="msg_erro">
@@ -169,6 +169,9 @@
         }
     }
 
+    function limpar(){
+        text_campo.innerHTML = ``;
+    }
     verificar_autenticacao();
 
 </script>

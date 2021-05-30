@@ -54,7 +54,7 @@ router.get('/ultimas/:idcaminhao', function(req, res, next) {
 });
 
 
-router.get('/tempo-real/:idcaminhao', function(req, res, next) {
+router.get('/contatos/:idcaminhao', function(req, res, next) {
 	console.log('Recuperando caminhões');
 	
 	//var idcaminhao = req.body.idcaminhao; // depois de .body, use o nome (name) do campo em seu formulário de login

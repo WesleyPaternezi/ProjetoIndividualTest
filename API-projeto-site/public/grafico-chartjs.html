@@ -45,7 +45,7 @@
             <div class="nav">
                 <ul>
                     <li> <a href="publicacoes.html">Publicações</a></li>
-                    <li> <a href="tempo-real.html">Tempo Real</a></li>
+                    <li> <a href="contatos.html">Tempo Real</a></li>
                     <li><a href="#" class="highlight" onclick="logoff()">LOGOUT</a></li>
                     <li><a href="pagina-estatica-chartsjs.html">
                         <i class="show-on-hover">IR PARA PÁGINA GRÁFICO ESTÁTICO</i>
@@ -211,7 +211,7 @@
     // ou se souber o que está fazendo!
     function atualizarGrafico(idcaminhao, dados) {
         console.log("executei atualizarGrafico")
-        fetch(`/leituras/tempo-real/${idcaminhao}`, { cache: 'no-store' }).then(function (response) {
+        fetch(`/leituras/contatos/${idcaminhao}`, { cache: 'no-store' }).then(function (response) {
             console.log("Estou tentando pegar idcaminhao = ", idcaminhao)
             if (response.ok) {
                 response.json().then(function (novoRegistro) {
