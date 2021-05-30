@@ -72,23 +72,6 @@ a#cadastro{
     float: right
 }
 
-/* FOOTER */
-
-.footer {
-    background-color: rgb(255, 95, 37);
-    text-align: center;
-    height: 100px;
-}
-
-.footer h4 {
-    color: white;
-    font-weight: 100;
-    margin: 0;
-    padding-top: 40px;
-}
-
-
-
 /* dashboard */
 
 .dashboard {
@@ -215,4 +198,24 @@ a#cadastro{
     height: auto;
     width: auto;
     margin-left: 13%;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #ffd32a;
+    text-align: center;
+    height: 100px;
+    text-shadow: 1px 1px black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.footer h4 {
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 40px;
 }
