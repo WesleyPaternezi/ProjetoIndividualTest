@@ -1,0 +1,101 @@
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ecf0f1;
+}
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CABEÇALHO */
+
+.topnav {
+    background-color: #07000E;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1vh solid #ffd32a;
+    margin: 0;
+}
+
+.topnav a {
+    float: left;
+    color: #F9F9F9;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+}
+
+.usuario {
+    width: 75%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.usuario h3 {
+    font-weight: 100;
+    margin: 0;
+}
+b{
+    color: #ffd32a;
+    float: right;
+}
+h3{
+    color: #ffd32a;
+    float: right;
+}
+
+.topnav a:hover {
+    background-color: #F9F9F9;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #ffd32a;
+    color: #F9F9F9;
+    text-shadow: 1px 1px black;
+}
+
+a#login{
+    float: right
+}
+a#cadastro{
+    float: right
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #ffd32a;
+    text-align: center;
+    height: 100px;
+    text-shadow: 1px 1px black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.footer h4 {
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 40px;
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
+}

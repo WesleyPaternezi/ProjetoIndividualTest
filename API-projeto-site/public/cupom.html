@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumpom</title>
+    <link rel="stylesheet" href="css/cupom.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="funcoes.js"></script>
+</head>
+
+<body>
+    <!--header inicio-->
+    <div class="header">
+        <div class="topnav">
+            <a href="index.html">Inicio</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="agendamentos.html">Agendamento</a>
+            <a href="publicacoes.html">FeedBack</a>
+            <a class="active" href="contatos.html">Contatos</a>
+            <a id="login" href="" onclick="return logoff()">LOGOUT</a>
+            <h3>&nbsp; Olá, &nbsp; <b id="b_usuario"></b></h3>
+        </div>
+    </div>
+    <!--header fim-->
+    <!-- contatos -->
+    <div id="banner">
+        <div id="conteudo">
+            <div id="sorte">
+                <h2>CUPUM DA SORTE SORTUDA</h2>
+                <h2>PARABÉNS!</h2>
+                <h2>Você Ganhou 1 Unica chance de ganhar um super cupom, gostaria de tentar resgatar ?</h2>
+                <h2>Aviso: Suas chances São de %50 de conseguir o cupom</h2>
+                <div id="msg"></div>
+                <button id="botao" onclick="sorte()">SIM!</button>
+                <button style="display: none;" id="resgate" onclick="resgatar()">RESGATAR</button>
+            </div>
+        </div>
+    </div>
+    <!-- contatos FIM -->
+    <!--footer inicio-->
+    <div class="footer">
+        <div class="container">
+            <h4><a href="https://github.com/WesleyBandTec"> Feito por um aluno BandTec. Copyright © 2021</a> <a
+                    href="obrigado.html">:D</a></h4>
+        </div>
+    </div>
+    <!--footer fim-->
+    <script>
+        // let usuario;
+        // verificar_autenticacao();
+        // var online1 = parseInt(Math.random() * 2)
+
+        var contador = 0;
+        function sorte() {
+            var num_sorte = parseInt(Math.random() * 100)
+
+            if (num_sorte >= 50) {
+                msg.innerHTML = `Parabéns você ganhou 1 cupom de 10% de desconto`
+                contador++
+                document.getElementById("resgate").style.display = "block";
+                console.log(num_sorte)
+            } else {
+                msg.innerHTML = `Você perdeu :(`
+                console.log(num_sorte)
+                document.getElementById("botao").style.display = "none";
+                contador = 0;
+            }
+        }
+        function resgatar() {
+            document.getElementById("botao").style.display = "none";
+            
+        }
+    </script>
