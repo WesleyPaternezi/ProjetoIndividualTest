@@ -90,7 +90,7 @@
                     <p>Willian Paternezi</p>
                     <img class="perfil" src="img/Team/w1.jfif">
                 </div>
-                
+
                 <div class="direita_perfil">
                     <p>Veículo: </p> <br>
                     <img class="veiculos" src="img/veiculos/livina.png" alt="Livina Nissan">
@@ -103,53 +103,61 @@
             </div>
         </div>
     </div>
+    <div class="alert_cupom">
+        <span id="premio"></span>
+    </div>
     <!-- contatos FIM -->
     <!--footer inicio-->
     <div class="footer">
         <div class="container">
-            <h4><a href="https://github.com/WesleyBandTec"> Feito por um aluno BandTec. Copyright © 2021</a> <a href="obrigado.html">:D</a></h4>
+            <h4><a href="https://github.com/WesleyBandTec"> Feito por um aluno BandTec. Copyright © 2021</a> <a
+                    href="obrigado.html">:D</a></h4>
         </div>
     </div>
     <!--footer fim-->
-<script>
-    let usuario;
-    verificar_autenticacao();
+    <script>
+        var cupom = parseInt(Math.random() * 100);
+        if (cupom >= 80) {
+            premio.innerHTML = '<h4><a href="cupom.html"> Você foi premiado a chances de cupons!!! </a> </h4>'
+        }
+        let usuario;
+        verificar_autenticacao();
 
-    var online1 = parseInt(Math.random() * 2)
-    var online2 = parseInt(Math.random() * 2)
-    var online3 = parseInt(Math.random() * 2)
-    var online4 = parseInt(Math.random() * 2)
+        var online1 = parseInt(Math.random() * 2);
+        var online2 = parseInt(Math.random() * 2);
+        var online3 = parseInt(Math.random() * 2);
+        var online4 = parseInt(Math.random() * 2);
 
-    if (online1 == 1) {
-        active_rog.innerHTML = `<span id="active-will" style="color: green;">Online
+        if (online1 == 1) {
+            active_rog.innerHTML = `<span id="active-will" style="color: green;">Online
         </span>`
-    } else {
-        active_rog.innerHTML = `<span id="active-will" style="color: red;">Off-line
+        } else {
+            active_rog.innerHTML = `<span id="active-will" style="color: red;">Off-line
         </span>`
-    }
+        }
 
-    if (online2 == 1) {
-        active_san.innerHTML = `<span id="active-will" style="color: green;">Online
+        if (online2 == 1) {
+            active_san.innerHTML = `<span id="active-will" style="color: green;">Online
         </span>`
-    } else {
-        active_san.innerHTML = `<span id="active-will" style="color: red;">Off-line
+        } else {
+            active_san.innerHTML = `<span id="active-will" style="color: red;">Off-line
         </span>`
-    }
+        }
 
-    if (online3 == 1) {
-        active_sil.innerHTML = `<span id="active-will" style="color: green;">Online
+        if (online3 == 1) {
+            active_sil.innerHTML = `<span id="active-will" style="color: green;">Online
         </span>`
-    } else {
-        active_sil.innerHTML = `<span id="active-will" style="color: red;">Off-line
+        } else {
+            active_sil.innerHTML = `<span id="active-will" style="color: red;">Off-line
         </span>`
-    }
+        }
 
-    if (online4 == 1) {
-        active_will.innerHTML = `<span id="active-will" style="color: green;">Online
+        if (online4 == 1) {
+            active_will.innerHTML = `<span id="active-will" style="color: green;">Online
         </span>`
-    } else {
-        active_will.innerHTML = `<span id="active-will" style="color: red;">Off-line
+        } else {
+            active_will.innerHTML = `<span id="active-will" style="color: red;">Off-line
         </span>`
-    }
+        }
 
-</script>
+    </script>

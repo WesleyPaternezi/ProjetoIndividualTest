@@ -21,26 +21,37 @@
             <a href="sobre.html">Sobre</a>
             <a href="agendamentos.html">Agendamento</a>
             <a href="publicacoes.html">FeedBack</a>
-            <a class="active" href="contatos.html">Contatos</a>
+            <a href="contatos.html">Contatos</a>
+            <a class="active" href="cupom.html">Cupom</a>
             <a id="login" href="" onclick="return logoff()">LOGOUT</a>
             <h3>&nbsp; Olá, &nbsp; <b id="b_usuario"></b></h3>
         </div>
     </div>
     <!--header fim-->
     <!-- contatos -->
-    <div id="banner">
-        <div id="conteudo">
-            <div id="sorte">
-                <h2>CUPUM DA SORTE SORTUDA</h2>
-                <h2>PARABÉNS!</h2>
-                <h2>Você Ganhou 1 Unica chance de ganhar um super cupom, gostaria de tentar resgatar ?</h2>
-                <h2>Aviso: Suas chances São de %50 de conseguir o cupom</h2>
-                <div id="msg"></div>
-                <button id="botao" onclick="sorte()">SIM!</button>
-                <button style="display: none;" id="resgate" onclick="resgatar()">RESGATAR</button>
+    <center>
+        <div id="banner">
+            <div id="conteudo">
+                <div id="sorte">
+                    <div id=texto>
+                        <h2>CUPUM DA SORTE SORTUDA</h2>
+                        <h2>Você Ganhou chances de ganhar super cupons, gostaria de tentar resgatar ?</h2>
+                        <h2>A cada click no Botão, voce concorre a um cupom de 10% de desconto na proxima viagem</h2>
+                        <h2>Se continuar, voce concorre a OUTRO cupom de um valor ainda maior</h2>
+                        <h2>Porem voce tem chances de perder todos os cupons de uma só vez</h2>
+                        <h2>Aviso: Suas chances são de %50 por cupom</h2>
+                    </div>
+                    <div id="msg"></div>
+                    <button id="botao" onclick="sorte()">SIM!</button>
+                    <div id="resgate" style="display: none;">
+                        <h2> ou quer resgatar seu cupom?</h2>
+                        <button onclick="resgatar()">RESGATAR</button>
+                    </div>
+                    <div id="msg2"></div>
+                </div>
             </div>
         </div>
-    </div>
+    </center>
     <!-- contatos FIM -->
     <!--footer inicio-->
     <div class="footer">
@@ -51,28 +62,37 @@
     </div>
     <!--footer fim-->
     <script>
-        // let usuario;
-        // verificar_autenticacao();
-        // var online1 = parseInt(Math.random() * 2)
+        let usuario;
+        verificar_autenticacao();
+        var array_qnt = []
+        var val_cupom = 0;
 
-        var contador = 0;
         function sorte() {
+            document.getElementById("texto").style.display = "none";
             var num_sorte = parseInt(Math.random() * 100)
 
-            if (num_sorte >= 50) {
-                msg.innerHTML = `Parabéns você ganhou 1 cupom de 10% de desconto`
-                contador++
-                document.getElementById("resgate").style.display = "block";
+            if (num_sorte >= 10) {
+
                 console.log(num_sorte)
+                array_qnt.push(val_cupom += 10)
+                msg.innerHTML = `<h2>Parabéns você ganhou ${array_qnt[array_qnt.length - 1]}% de Desconto na sua proxima Corrida !!! <br>
+                Deseja Continuar?</h2>`
+                document.getElementById("resgate").style.display = "block";
             } else {
-                msg.innerHTML = `Você perdeu :(`
+                msg.innerHTML = `<h2>Você perdeu :( </h2>`
                 console.log(num_sorte)
                 document.getElementById("botao").style.display = "none";
-                contador = 0;
+                document.getElementById("resgate").style.display = "none";
             }
         }
         function resgatar() {
             document.getElementById("botao").style.display = "none";
-            
+            document.getElementById("msg").style.display = "none";
+            document.getElementById("resgate").style.display = "none";
+            for (var i = 0; i < array_qnt.length; i++) {
+                msg2.innerHTML += `<h1>
+                Voce Coletou um Cupom de ${array_qnt[i]}% de desconto!<br> </h1>`
+            }
+
         }
     </script>
