@@ -1,0 +1,44 @@
+
+body{
+    margin: 0;
+    color: white;
+    background-color: black;
+
+}
+h1{
+    margin: 0;
+}
+h3{
+    margin: 0;
+}
+#quadradao {
+  width: 100%;
+  height: 1000px;
+  background: black;
+  position: relative;
+  animation: mymove 35s;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes mymove {
+  from {bottom: -800px;}
+  to {bottom: 1800px;}
+}
+
+.quadrados {
+    width: 80%;
+    height: 50%;
+    background: black;
+    color: white;
+    text-align: center;
+    display: inline
+}
+img{
+    height: 200px;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.centro{
+}

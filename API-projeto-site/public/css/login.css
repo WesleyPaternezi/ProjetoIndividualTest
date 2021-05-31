@@ -117,3 +117,7 @@ a#cadastro{
     margin: 0;
     padding-top: 45px;
 }
+a{
+    text-decoration: inherit;
+    color: inherit;
+}

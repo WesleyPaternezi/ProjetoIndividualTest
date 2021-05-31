@@ -14,7 +14,7 @@ a {
     text-decoration: none;
 }
 
-/* CABEÇALHO */
+/* NAVBAR */
 
 .topnav {
     background-color: #07000E;
@@ -71,6 +71,7 @@ a#login{
 a#cadastro{
     float: right
 }
+/* FIM NAVBAR */
 
 /* dashboard */
 
@@ -86,7 +87,32 @@ a#cadastro{
 .dashboard h1 {
     margin-bottom: 40px;
 }
+/* SELECTS */
+select {
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 8%;
+    font-family: inherit;
+    font-size: 26px;
+    cursor: inherit;
+    line-height: inherit;
+    margin-bottom: 25px;
+}
+/* SELECT FIM  */
 
+/* TEXTARE  */
+textarea {
+	width: 600px;
+	height: 60px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+    font-size: 25px;
+}
+h2{
+    margin: 10px 0 0 10px;
+}
+/* TEXTAREA */
 .dashboard .textarea-padrao {
     resize: none;
     display: inline-block;
@@ -111,6 +137,7 @@ a#cadastro{
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .botoes {
@@ -135,37 +162,6 @@ a#cadastro{
     border: 3px solid #232323;
     background-color: #FFD32A;
 }
-
-/* EXTRA */
-
-.extra {
-    margin: 10px;
-}
-
-.extra img {
-  height: 50px;
-   visibility: hidden;
-}
-
-.extra .msg_erro {
-    background-color: sandybrown; 
-    color: black; 
-    visibility: hidden;
-}
-
-.card {
-    border: 1px solid red;
-    border-radius: 10px;
-    display: block;
-    margin: 10px 7%;
-    height: 160px;
-    float: left;
-    text-align: center;
-    background-color: white;
-    box-shadow:  3px 3px 5px 2px #ccc;
-}
-
-/* extra */
 
 .show-on-hover {
     color:#232323
@@ -197,7 +193,7 @@ a#cadastro{
 .descricao {
     height: auto;
     width: auto;
-    margin-left: 13%;
+    margin-left: 15%;
 }
 
 /* FOOTER */
@@ -218,4 +214,8 @@ a#cadastro{
     font-weight: 100;
     margin: 0;
     padding-top: 40px;
+}
+a{
+    text-decoration: inherit;
+    color: inherit;
 }

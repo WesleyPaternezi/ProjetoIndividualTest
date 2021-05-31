@@ -174,3 +174,7 @@ select {
     margin: 0;
     padding-top: 40px;
 }
+a{
+    text-decoration: inherit;
+    color: inherit;
+}

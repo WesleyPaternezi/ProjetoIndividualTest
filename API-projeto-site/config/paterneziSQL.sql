@@ -16,3 +16,15 @@ CREATE TABLE publicacao (
 	fkUsuario INT,
     foreign key (fkUsuario) references usuario (id)
 );
+
+select * from usuario;
+desc publicacao;
+
+select * from usuario 
+inner join publicacao
+on fkUsuario = id;
+
+select u.nome, p.descricao 
+from usuario as u
+inner join publicacao as p
+on fkUsuario = u.id;

@@ -3,6 +3,7 @@ body {
     background-color: #07000E;
     color: white;
     font-family: 'Merriweather Sans', sans-serif;
+    font-size: 26px;
 }
 .topnav {
     background-color: #07000E;
@@ -37,54 +38,37 @@ a#cadastro{
 }
 /* header FIM */
 /* BANNER INICIO */
-.banner {
-    height: 400px;
-    width: 100%;
-    background: url(../img/fundo9.png);
-    background-size: cover;
-    left: 0;
-    bottom: 0;
-    position: relative;
-}
-/* Tamanho do banner com a foto do TAXI */
-.banner .container {
-    height: 400px;
-}
-/* Centralizando Taxis Blindado */
-.banner .texto {
-    text-align: center;
-    padding-top: 150px;
-}
-/* Colorindo Taxis blindado */
-.banner .titulo {
-    font-size: 68px;
-    color: #ffd32a;
-
-}
-/* BANNER FIM  */
-/* NOVIDADES */
-.novidades {
-    background-color: #07000E;
-    height: 90px;  
-    border-top: 3px solid #ffd32a;   
-    border-bottom: 3px solid #ffd32a;   
-}
-.novidades .container {
-    padding: 30px 0;
-}
-.novidades button {
-    color: white;
-    background-color: #ffd32a;
-    text-transform: uppercase;
-    width: 180px;
+#container{
+    height: 125vh;
+    width: 80%;
     margin: auto;
-    display: block; /* Default de botão é inline-block. Com block, margin auto funciona*/
-    border: 0;
-    height: 38px;
-    padding: 0 20px;
-    cursor: pointer;
-    text-shadow: 1px 1px black;
 }
+h1{
+    text-align: center;
+}
+.esquerda{
+    display: grid;
+    float: left;
+    margin-top: 5vh;
+}
+h2{
+    margin: 1vh 0 1vh 0;
+}
+
+.direita{
+    display: grid;
+    float: right;
+}
+
+.fotos{
+    width: 40vh;
+    height: 30vh;
+    margin-bottom: 3vh;
+    border-radius: 1vh;
+    display: block;
+}
+
+/* BANNER FIM  */
 /* ICONES */
 .box {
     overflow: auto;
@@ -102,53 +86,6 @@ a#cadastro{
     height: 100px;
 }
 
-
-/* SOBRE - ASSUNTOS */
-
-.assuntos {
-    background-color: #07000E;
-    overflow: auto;
-    padding-top: 30px;
-    text-align: center;
-    padding-bottom: 50px;
-    color: #F9F9F9
-}
-
-.assuntos .assunto1 {
-    /* border-bottom: 3px solid #ffd32a; */
-    background-color: #07000E;
-    padding: 30px 15px;
-    float: left;
-    width: 40%;
-    margin-left: 5%; 
-}
-
-.assuntos .assunto2 {
-    /* border-bottom: 3px solid #ffd32a; */
-    background-color: #07000E;
-    padding: 30px 15px;
-    float: left;
-    width: 40%;
-    margin-left: 5%; 
-}
-.assuntos .assunto3 {
-    /* border-bottom: 3px solid #ffd32a; */
-    background-color: #07000E;
-    padding: 30px 15px;
-    float: left;
-    width: 40%;
-    margin-left: 5%; 
-}
-
-.assuntos h2 {
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-}
-
-.assuntos p {
-    line-height: 1.5;
-}
 
 /* SOBRE - INTEGRANTES */
 
@@ -193,8 +130,7 @@ a{
 }
 
 /* ASSUNTO GRANDE */
-
-.assuntos .assunto-grande {
+.assunto-grande {
     border-bottom: 3px solid #ffd32a;
     background-color: #07000E;
     color: #F9F9F9;
@@ -216,4 +152,8 @@ a{
     font-weight: 100;
     margin: 0;
     padding-top: 40px;
+}
+a{
+    text-decoration: inherit;
+    color: inherit;
 }

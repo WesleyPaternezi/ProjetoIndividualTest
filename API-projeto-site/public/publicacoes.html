@@ -31,17 +31,24 @@
     <div class="dashboard">
         <div class="container">
             <div class="post">
-                <h2>Faça uma Avaliação!</h2>
+                <h1>Deixe uma Avaliação!</h1>
+                <h2> Motorista &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Avaliação </h2>
+                <select>
+                    <option value="Rogerio">Rogerio</option>
+                    <option value="Sandra">Sandra</option>
+                    <option value="Silton">Silton</option>
+                    <option value="Willian">Willian</option>
+                </select> &nbsp;
+                <select>Avaliação
+                    <option value="0">✦0</option>
+                    <option value="1">✦1</option>
+                    <option value="2">✦2</option>
+                    <option value="3">✦3</option>
+                    <option value="4">✦4</option>
+                    <option value="5">✦5</option>
+                </select>
                 <form id="form_publicar" method="post" onsubmit="return publicar()">
-                    <select>Motoristas
-                        <option value="Rogerio">Rogerio</option>
-                    </select>
-                    <select>Avaliação
-                        <option value="Rogerio">Nota</option>
-                    </select>
-                    <br>
-                    Descrição:
-                    <br>
+                   <h2>Descrição:</h2> 
                     <textarea id="text_campo" rows="3" cols="50" maxlength="100" class="textarea-padrao" name="descricao"></textarea>
                     <br>
                     <button id="btn_publicar" onclick="limpar()" class="btn-green">Publicar</button>
@@ -62,7 +69,7 @@
     <!--footer inicio-->
     <div class="footer">
         <div class="container">
-            <h4>Feito por um aluno BandTec &COPY; 2021</h4>
+            <h4><a href="https://github.com/WesleyBandTec"> Feito por um aluno BandTec. Copyright © 2021</a> <a href="obrigado.html">:D</a></h4>
         </div>
     </div>
     <!--footer fim-->
