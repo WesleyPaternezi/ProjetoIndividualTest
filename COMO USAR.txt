@@ -1,3 +1,53 @@
 Primeiramente. Olá! Seja bem vindo ao meu projeto indivudual.
-O projeto foi uma homenagem ao 
+O projeto foi uma homenagem ao meus pais. 
+Durante o meu primeiro semestre da Faculdade de ADS.
 
+!!!! PRECISA TER NODEJS. !!!!
+!!!! PRECISA TER GIT !!!!
+!!!! PRECISA TER VSCODE !!!!
+!!!! PRECISA TER mySQL WORKBENCH !!!!
+!!!! PRECISA TER UM BROWSER :D !!!!
+
+-------------------- PASSO 1 -----------------------
+- npm i dentro do ProjetoIndividualTest
+- npm i dentro do enviaDados
+- npm i dentro do Projeto-site
+
+-------------------- PASSO 2 -----------------------
+Use o Script dentro do Projeto-site>  config>  "sql"
+(o paterneziSQL é o script Completo, não funcional)
+
+-------------------- PASSO 3 -----------------------
+!!!! mySQL WORKBENCH !!!!
+Atualize o script dentro do mySQL workbench.
+(CTRL+C, CTRL+V e RODE no workbench)
+
+-------------------- PASSO 4 -----------------------
+!!!! VScode !!!!
+dentro do projeto-site >>> config >>> config.js
+configure o banco no config.js. 
+USE dev: para database local
+
+cadastre:
+username
+passoword         -- DE PREFERENCIA DEIXE O PADRÃO, já pelo root
+database              
+
+-------------------- PASSO 5 -----------------------
+!!!! NODEJS !!!!
+
+entre na pasta projeto-site >>> botão direito >>>  GIT-BASH HERE
+DIGITE "NPM START" 
+O site abrirá na porta local 3000
+
+-------------------- PASSO 6 -----------------------
+Abra o browser e digite:
+http://localhost:3000/
+
+-------------------- PASSO 7 -----------------------
+SEJA BEM VINDO AO SITE
+
+INTRO  e  Sobre estão sem validação. Resumindo, aberto.
+
+as outras páginas precisam de um cadastro e acessar o login...
+DIVIRTASSE :D
