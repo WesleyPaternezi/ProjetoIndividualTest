@@ -39,8 +39,9 @@
                     <input type="password" class="input-padrao" name="senha">
                     <br>
                     <button id="btn_entrar" class="btn-green">Entrar</button>
-                    <br>
                     <img id="img_taxi" src="img/taxiGif.gif" >
+                    <div id="div_erro"></div>
+
                 </form>
                 <br>
             </div>
@@ -83,6 +84,8 @@
                 console.log('Erro de login!');
 
                 resposta.text().then(texto => {
+
+                    div_erro.innerHTML= texto
                     console.error(texto);
                 });
             }
