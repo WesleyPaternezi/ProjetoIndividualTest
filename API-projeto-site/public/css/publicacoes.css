@@ -183,6 +183,12 @@ h2{
     margin-bottom: 10px;
 }
 
+#feed_container{
+    overflow-y: scroll;
+
+    height: 28vh;
+}
+
 .nome {
     float:left;
     color:#FFD32A;
